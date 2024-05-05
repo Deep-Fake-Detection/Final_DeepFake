@@ -38,7 +38,9 @@
             margin-right: 15%;
             backdrop-filter: blur(8px);
         }
-        
+        .content{
+            color:white;
+        }
         fieldset {
             background-color: inherit;
         }
@@ -109,6 +111,9 @@
                 </legend>
                 <div>
                     <h3 class="txt">DeepFake Detection</h3>
+                </div>
+                <div>
+                    <p class="content">{{valid}}</p>
                 </div>
                 <div>
                     <input  class="text" type="text" name="txt" id="txt" placeholder="Email">

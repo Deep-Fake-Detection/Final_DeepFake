@@ -7,21 +7,25 @@ from django.views.decorators.csrf import requires_csrf_token
 @requires_csrf_token
 # Create your views here.
 def home(request):
-    if(request=='GET'):
-        email=request.GET['txt']
-        password=request.GET['pass']
-    if(request=='POST'):
-        email=request.POST('txt')
-        password=request.POST('pass')
-        print(email,password)
-        if(email=='vishnuv' and password=='1234'):
-            return redirect('login')
     return render(request,'login.html')
 
 def login(request):
-    return render(request,'model.html')
+    print(request)
+    if(request=='GET'):
+        email=request.GET['txt']
+        password=request.GET['pas']
+        print(email,password)
+    if(request=='POST'):
+        email=request.POST('txt')
+        password=request.POST('pas')
+        print(email,password)
+        if(email=='vishnuv' and password=='1234'):
+            return render(request,'model.html')
+        else:
+            return render(request,'login.html',{'valid':'Please enter a valid credentials !!'})
+    return render(request,'login.html')
 
 def register(request):
-    return redirect('register')
+    return render(request,'register.html')
 def logout(request):
     return render(request,'logout.html')
