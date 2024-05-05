@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <style>
+        html {
+            backdrop-filter: blur(10px);
+        }
+        
+        body {
+            background: url('https://live.staticflickr.com/65535/53636493032_823fcb3342_b.jpg"');
+            background-size: cover;
+            background-position: contain;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(30px);
+            margin: 0;
+        }
+        
+        .body {
+            backdrop-filter: blur(4px);
+        }
+        
+        .nav {
+            box-shadow: 0px 2px 0px 0px#ffff;
+        }
+        
+        .nav nav ul {
+            text-align: end;
+            padding: 1%;
+            display: flex;
+            flex-direction: row;
+            gap: 30%;
+        }
+        
+        .icon {
+            text-align: start;
+            width: 50%;
+        }
+        
+        .text {
+            width: 50%;
+            position: relative;
+        }
+        
+        .img {
+            border-radius: 55%;
+        }
+        
+        .nav nav ul a {
+            text-decoration: none;
+            color: aliceblue;
+            margin-right: 6%;
+            text-align: center;
+            align-items: center;
+            position: relative;
+            font-size: 14px;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+        .txt{
+            font-size: 24px;
+            color:#ffff;
+            letter-spacing: 1px;
+        }
+        .container {
+            justify-content: center;
+            text-align: center;
+            margin-left: 15%;
+            margin-right: 15%;
+            
+        }
+        .detection{
+            text-align:center;
+            padding:4%;
+            
+        }
+        .button{
+            text-decoration:none;
+            color:#ffff;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="body">
+        <section class="detection">
+            <div>
+                <form action="logout" method="get">
+                    <p class="txt"> Logged out successfully</p>
+                </form>
+            </div>
+            <div>
+                <a class="button" href="http://127.0.0.1:8000">Login Page</a>
+            </div>
+        </section>
+    </section>
+
+
+
+</body>
+
+</html>
